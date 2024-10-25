@@ -1,0 +1,94 @@
+#include<iostream>
+using namespace std;
+class EmployeeContactDetails
+{
+    public:
+    string name;
+    string address;
+    int birthdate;
+    int age;
+    int phoneno;
+    void getemployeecontactdetails()
+    {
+        cout<<"Enter name of employee:";
+        cin>>name;
+        cout<<"Enter address of employee:";
+        cin>>address;
+        cout<<"Enter date of birth of employee:";
+        cin>>birthdate;
+        cout<<"Enter age of employee:";
+        cin>>age;
+        cout<<"Enter phone number of employee:";
+        cin>>phoneno;
+    }
+    void showemployeecontactdetails()
+    {
+    cout<<"name of employee:"<<name<<endl;
+    cout<<"address of employee:"<<address<<endl;
+    cout<<"date of birth of employee:"<<birthdate<<endl;
+    cout<<"age of employee:"<<age<<endl;
+    cout<<"phone number of employee:"<<endl;
+    }
+};
+class EmployeeProficiency
+{
+    public:
+    string qualification;
+    int dateofjoining;
+    string workdepartment;
+    string worklocation;
+    void getemployeeproficiency()
+    {
+        cout<<"Enter qualification of employee:";
+        cin>>qualification;
+        cout<<"Enter date of joining of employee:";
+        cin>>dateofjoining;
+        cout<<"Enter working departement of employee";
+        cin>>workdepartment;
+        cout<<"Enter working location of employee:";
+        cin>>worklocation;
+    }
+    void showemployeeproficiency()
+    {
+        cout<<"qualification of employee:"<<qualification<<endl;
+        cout<<"date of joining of employee:"<<dateofjoining<<endl;
+        cout<<"working department of employee:"<<workdepartment<<endl;
+        cout<<"working location of employee:"<<worklocation<<endl;
+        
+    }
+};
+class EmployeeControl
+{
+    public:
+    int add;
+    int modify;
+    int del;
+    void getemployeecontrol()
+    {
+        cout<<"Enter added employee record:";
+        cin>>add;
+        cout<<"Enter modifying employee record:";
+        cin>>modify;
+        cout<<"Enter delete employee record:";
+        cin>>del;
+    }
+    void showemployeecontrol()
+    {
+        cout<<"added employee record:"<<add<<endl;
+        cout<<"modifying employee record:"<<modify<<endl;
+        cout<<"delete employee record:"<<del<<endl;
+    }
+};
+int main()
+{
+    EmployeeContactDetails d;
+    d.getemployeecontactdetails();
+    d.showemployeecontactdetails();
+    EmployeeProficiency p;
+    p.getemployeeproficiency();
+    p.showemployeeproficiency();
+    EmployeeControl c;
+    c.getemployeecontrol();
+    c.showemployeecontrol();
+    return 0;
+}
